@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMUN 2026 | Modelo de Naciones Unidas</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Fuentes elegantes e institucionales -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <header class="header">
+    <div class="nav-container container-nav">
+      <div class="logo-wrapper">
+        <img src="logo SAMUN.jpeg" alt="Logo SAMUN" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="logo-main">SA</span><span class="logo-sub">MUN</span>
+          <span class="logo-year">2026</span>
+        </div>
+      </div>
+      
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Sobre el evento</a></li>
+          <li><a href="#secretariado">Secretariado</a></li>
+          <li><a href="#comites">Comités</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#inscripciones" class="btn-nav">Inscripciones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">COLEGIO SAN AGUSTÍN PRESENTA</p>
+      <h1 class="hero-title">SAMUN 2026</h1>
+      <h2 class="hero-subtitle">Líderes en el cambio global</h2>
+      <!-- MODIFICACIÓN: Fechas exactas de Septiembre -->
+      <p class="hero-dates">
+        <i class="fa-regular fa-calendar-days"></i> 17, 18 y 19 de Septiembre de 2026 • Cochabamba, Bolivia
+      </p>
+      <div class="hero-actions">
+        <a href="#inscripciones" class="btn btn-primary btn-large">Inscribirse ahora</a>
+        <a href="#about" class="btn btn-secondary btn-large">Saber más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE EL MODELO -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">BIENVENIDA</span>
+        <h2 class="section-title">Sobre el Modelo</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-col">
+          <h3>Nuestra Visión</h3>
+          <p>El Modelo de Naciones Unidas del Colegio San Agustín (SAMUN 2026) se consolida como un espacio de debate académico de excelencia. Buscamos inspirar a las nuevas generaciones a analizar, debatir y plantear soluciones innovadoras ante los desafíos geopolíticos, sociales y humanitarios más complejos de nuestra era.</p>
+        </div>
+        <div class="about-col">
+          <h3>Un Espacio de Liderazgo</h3>
+          <p>Durante este modelo, los delegados desarrollarán habilidades críticas de oratoria, negociación pacífica, redacción diplomática y pensamiento estratégico. SAMUN es el escenario ideal para formar a los líderes del mañana bajo los valores de tolerancia, empatía, respeto y rigurosidad intelectual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: SECRETARIADO (MODIFICADA CON FOTO GRUPAL Y CARRUSEL DE 6 MIEMBROS) -->
+  <section id="secretariado" class="secretariat-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">NUESTRO EQUIPO</span>
+        <h2 class="section-title">Secretariado Organizador</h2>
+        <div class="title-divider"></div>
+      </div>
+
+      <!-- Espacio para fotografía grupal grande -->
+      <div class="secretariat-group-photo">
+        <div class="group-photo-placeholder">
+          <i class="fa-solid fa-users"></i>
+          <p>FOTO GRUPAL DEL SECRETARIADO</p>
+          <span>(Próximamente disponible)</span>
+        </div>
+      </div>
+
+      <div class="carousel-section-header">
+        <h3 class="carousel-section-title">Conoce a nuestros secretarios</h3>
+      </div>
+
+      <!-- Carrusel Deslizable de Miembros -->
+      <div class="carousel-wrapper">
+        <button class="carousel-arrow left-arrow" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <div class="carousel-container" id="carouselTrack">
+          
+          <!-- Miembro 1 -->
+          <div class="member-carousel-card">
+            <div class="member-photo-frame">
+              <div class="member-photo-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <h3>Leonardo de la Zerda Golac</h3>
+            <p class="member-role">Secretario General</p>
+          </div>
+
+          <!-- Miembro 2 -->
+          <div class="member-carousel-card">
+            <div class="member-photo-frame">
+              <div class="member-photo-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <h3>Montserrat Nicol Careaga Torrico</h3>
+            <p class="member-role">Sub Secretaria General</p>
+          </div>
+
+          <!-- Miembro 3 -->
+          <div class="member-carousel-card">
+            <div class="member-photo-frame">
+              <div class="member-photo-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <h3>Natalia Sofía Fernández Alcázar</h3>
+            <p class="member-role">Secretaria Académica</p>
+          </div>
+
+          <!-- Miembro 4 -->
+          <div class="member-carousel-card">
+            <div class="member-photo-frame">
+              <div class="member-photo-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <h3>Valentina Alejandra Castro Soliz</h3>
+            <p class="member-role">Secretaria de Logística</p>
+          </div>
+
+          <!-- Miembro 5 -->
+          <div class="member-carousel-card">
+            <div class="member-photo-frame">
+              <div class="member-photo-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <h3>Valentina Isabel Ortiz Moya</h3>
+            <p class="member-role">Secretaria Económica</p>
+          </div>
+
+          <!-- Miembro 6 -->
+          <div class="member-carousel-card">
+            <div class="member-photo-frame">
+              <div class="member-photo-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <h3>Antonieta Isabela Miranda Ordoñez</h3>
+            <p class="member-role">Secretaria de Comunicación y Marketing</p>
+          </div>
+
+        </div>
+
+        <button class="carousel-arrow right-arrow" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: COMITÉS (MODIFICADA EN SECUNDARIA Y PRIMARIA CON EFECTO FLIP 3D) -->
+  <section id="comites" class="committees-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">FOROS DE DEBATE</span>
+        <h2 class="section-title">Nuestros Comités</h2>
+        <div class="title-divider"></div>
+        <p class="flip-instruction-text"><i class="fa-solid fa-arrows-rotate"></i> Pasa el cursor o presiona las tarjetas para ver los tópicos</p>
+      </div>
+
+      <!-- ================= CATEGORÍA SECUNDARIA ================= -->
+      <h3 class="category-title"><i class="fa-solid fa-graduation-cap"></i> Área Secundaria</h3>
+      <div class="committees-grid">
+        
+        <!-- Comité 1 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-double">Foro Doble</div>
+              <h3 class="committee-abbreviation">UNSC</h3>
+              <h4 class="committee-name">Consejo de Seguridad de las Naciones Unidas</h4>
+              <p class="committee-meta">Simulación de máxima seguridad y diplomacia internacional en tiempo real.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 2 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Histórico</div>
+              <h3 class="committee-abbreviation">CSH</h3>
+              <h4 class="committee-name">Consejo de Seguridad Histórico</h4>
+              <p class="committee-meta">Resolución de crisis críticas del pasado que alteraron la historia de la humanidad.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 3 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Especial</div>
+              <h3 class="committee-abbreviation">MSC</h3>
+              <h4 class="committee-name">Comité de Estado Mayor</h4>
+              <p class="committee-meta">Evaluación de estrategias de defensa y misiones armadas complejas.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 4 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Legal</div>
+              <h3 class="committee-abbreviation">CIJ</h3>
+              <h4 class="committee-name">Corte Internacional de Justicia</h4>
+              <p class="committee-meta">Resolución judicial de litigios entre Estados de acuerdo con el derecho internacional.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 5 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">UN</div>
+              <h3 class="committee-abbreviation">DISEC</h3>
+              <h4 class="committee-name">Primera Comisión: Desarme y Seguridad Internacional</h4>
+              <p class="committee-meta">Búsqueda de la estabilidad global a través del control de armas y desarme.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 6 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Especial</div>
+              <h3 class="committee-abbreviation">PBC</h3>
+              <h4 class="committee-name">Comisión de Consolidación de la Paz</h4>
+              <p class="committee-meta">Prevención y reconstrucción de sociedades devastadas por conflictos.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 7 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-english">English Forum</div>
+              <h3 class="committee-abbreviation">HRC</h3>
+              <h4 class="committee-name">Human Rights Council</h4>
+              <p class="committee-meta">High-level debate on the protection and advancement of human rights worldwide.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Official Topics</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Coming soon</li>
+                <li>Coming soon</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 8 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-double">Foro Doble</div>
+              <h3 class="committee-abbreviation">CSW</h3>
+              <h4 class="committee-name">Comisión de la Condición Jurídica y Social de la Mujer</h4>
+              <p class="committee-meta">Promoción de la igualdad de género y el empoderamiento de las mujeres.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 9 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Social</div>
+              <h3 class="committee-abbreviation">ECOSOC</h3>
+              <h4 class="committee-name">Consejo Económico y Social</h4>
+              <p class="committee-meta">Coordinación de las labores económicas, sociales y ambientales internacionales.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 10 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Tecnología</div>
+              <h3 class="committee-abbreviation">COPUOS</h3>
+              <h4 class="committee-name">Comité sobre la Utilización del Espacio con Fines Pacíficos</h4>
+              <p class="committee-meta">Regulación y desarrollo de la exploración espacial pacífica e internacional.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 11 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-regional">Cumbre</div>
+              <h3 class="committee-abbreviation">LEA - UE</h3>
+              <h4 class="committee-name">Cumbre Liga de los Estados Árabes – Unión Europea</h4>
+              <p class="committee-meta">Diálogo estratégico interregional de alta cooperación y política exterior.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 12 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-un">Nacional</div>
+              <h3 class="committee-abbreviation">FNH</h3>
+              <h4 class="committee-name">Foro Nacional Histórico</h4>
+              <p class="committee-meta">Debate de acontecimientos trascendentales de la historia política de nuestro país.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= CATEGORÍA PRIMARIA ================= -->
+      <h3 class="category-title category-primary-title"><i class="fa-solid fa-children"></i> Área Primaria</h3>
+      <div class="committees-grid">
+
+        <!-- Comité 13 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-primaria">Primaria</div>
+              <h3 class="committee-abbreviation">SOCHUM</h3>
+              <h4 class="committee-name">Tercera Comisión: Asuntos Sociales, Humanitarios y Culturales</h4>
+              <p class="committee-meta">Análisis sobre derechos humanos, problemáticas infantiles y culturales.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 14 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-primaria">Primaria</div>
+              <h3 class="committee-abbreviation">WHA</h3>
+              <h4 class="committee-name">Asamblea Mundial de la Salud</h4>
+              <p class="committee-meta">Debate académico infantil sobre nutrición, sanidad y prevención de virus.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 15 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-primaria">Primaria</div>
+              <h3 class="committee-abbreviation">UNEA</h3>
+              <h4 class="committee-name">Asamblea de la ONU sobre el Medio Ambiente</h4>
+              <p class="committee-meta">Concientización ecológica sobre conservación y calentamiento global.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comité 16 -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="committee-badge badge-double-primaria">Doble - Primaria</div>
+              <h3 class="committee-abbreviation">UNSC Primaria</h3>
+              <h4 class="committee-name">Consejo de Seguridad de las Naciones Unidas</h4>
+              <p class="committee-meta">Simulación introductoria por parejas para la preservación de la seguridad global.</p>
+            </div>
+            <div class="flip-card-back">
+              <h3>Tópicos Oficiales</h3>
+              <div class="divider-gold"></div>
+              <ul>
+                <li>Próximamente disponible</li>
+                <li>Próximamente disponible</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN RECURSOS -->
+  <section id="recursos" class="resources-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">DOCUMENTACIÓN</span>
+        <h2 class="section-title">Guías y Recursos</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <i class="fa-solid fa-file-pdf"></i>
+          <h3>Guía del Delegado</h3>
+          <p>Protocolos de debate, mociones y estructura de documentos.</p>
+          <a href="#" class="btn-text">Descargar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="resource-card">
+          <i class="fa-solid fa-gavel"></i>
+          <h3>Manual de Procedimiento</h3>
+          <p>Reglamento oficial de las sesiones y votaciones.</p>
+          <a href="#" class="btn-text">Descargar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCRIPCIONES -->
+  <section id="inscripciones" class="register-section">
+    <div class="container">
+      <div class="register-box">
+        <h2>¿Listo para el cambio?</h2>
+        <p>Asegura tu lugar en SAMUN 2026. Inscripciones abiertas.</p>
+        <div class="register-buttons">
+          <a href="#" class="btn btn-primary btn-large">Inscripción Delegaciones</a>
+          <a href="#" class="btn btn-gold btn-large">Inscripción Individual</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">COMUNICACIÓN</span>
+        <h2 class="section-title">Contacto</h2>
+        <div class="title-divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Formas de contactarnos</h3>
+          <ul class="info-list">
+            <!-- MODIFICACIÓN: Link de Google Maps para Colegio -->
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 
+              <a href="https://maps.app.goo.gl/SbfQoLrQAz8rkp4f8" target="_blank" class="contact-link-hover">
+                Colegio San Agustín, Cochabamba (Ver mapa)
+              </a>
+            </li>
+            <!-- MODIFICACIÓN: Nuevo correo oficial -->
+            <li>
+              <i class="fa-solid fa-envelope"></i> 
+              <a href="mailto:samuncbba@gmail.com" class="contact-link-hover">samuncbba@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+          <input type="text" placeholder="Nombre Completo" required>
+          <input type="email" placeholder="Correo Electrónico" required>
+          <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 SAMUN - Colegio San Agustín.</p>
+      <div class="social-links">
+        <!-- MODIFICACIÓN: Instagram Oficial, removido Facebook -->
+        <a href="https://www.instagram.com/samun_cbba?igsh=dGdvOXN6cWdjYmM0" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT: Controlador para mover el carrusel de secretarios de forma táctil y por botones -->
+  <script>
+    const track = document.getElementById('carouselTrack');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+
+    let scrollAmount = 0;
+    const cardWidth = 270; // Ancho aproximado de la tarjeta + gap
+
+    nextBtn.addEventListener('click', () => {
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (scrollAmount < maxScroll) {
+        scrollAmount += cardWidth;
+        track.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (scrollAmount > 0) {
+        scrollAmount -= cardWidth;
+        track.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+</html>

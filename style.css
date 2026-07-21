@@ -6,13 +6,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --color-primary: #002B66;       /* Azul Marino Imperial */
   --color-secondary: #7F1D1D;     /* Guindo / Borgoña */
   --color-accent: #D4AF37;        /* Dorado metálico */
   --color-accent-light: #F3E5AB;  /* Crema/Dorado suave */
   --color-background: #FBFBFA;    /* Blanco Roto/Marfil */
+  --color-light: #F4F6F9;
   --color-white: #FFFFFF;
   --color-text-dark: #0A1931;
   --color-text-muted: #555555;
@@ -23,12 +23,10 @@
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   --max-width: 1200px;
 }
-
 html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
-
 body {
   font-family: var(--font-body);
   background-color: var(--color-background);
@@ -36,18 +34,15 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 a {
   text-decoration: none;
   color: inherit;
   transition: var(--transition);
 }
-
 ul {
   list-style: none;
 }
@@ -61,18 +56,15 @@ ul {
   margin: 0 auto;
   padding: 80px 0;
 }
-
 h1, h2, .logo-text, .category-title {
   font-family: var(--font-header);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-
 .section-header {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .section-subtitle {
   color: var(--color-secondary);
   font-family: var(--font-header);
@@ -82,13 +74,11 @@ h1, h2, .logo-text, .category-title {
   display: block;
   margin-bottom: 8px;
 }
-
 .section-title {
   color: var(--color-primary);
   font-size: 2.5rem;
   font-weight: 700;
 }
-
 .title-divider {
   width: 80px;
   height: 3px;
@@ -96,8 +86,6 @@ h1, h2, .logo-text, .category-title {
   margin: 15px auto 0;
   border-radius: 2px;
 }
-
-/* Botones */
 .btn {
   display: inline-block;
   padding: 12px 30px;
@@ -111,43 +99,36 @@ h1, h2, .logo-text, .category-title {
   border: 2px solid transparent;
   text-align: center;
 }
-
 .btn-primary {
   background-color: var(--color-secondary);
   color: var(--color-white);
   border-color: var(--color-secondary);
 }
-
 .btn-primary:hover {
   background-color: transparent;
   color: var(--color-secondary);
   transform: translateY(-2px);
 }
-
 .btn-secondary {
   background-color: transparent;
   color: var(--color-white);
   border-color: var(--color-white);
 }
-
 .btn-secondary:hover {
   background-color: var(--color-white);
   color: var(--color-primary);
   transform: translateY(-2px);
 }
-
 .btn-gold {
   background-color: var(--color-accent);
   color: var(--color-primary);
   border-color: var(--color-accent);
 }
-
 .btn-gold:hover {
   background-color: transparent;
   color: var(--color-accent);
   transform: translateY(-2px);
 }
-
 .btn-large {
   padding: 15px 35px;
   font-size: 1rem;
@@ -167,7 +148,6 @@ h1, h2, .logo-text, .category-title {
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
   border-bottom: 3px solid var(--color-accent);
 }
-
 .container-nav {
   display: flex;
   justify-content: space-between;
@@ -177,34 +157,28 @@ h1, h2, .logo-text, .category-title {
   max-width: var(--max-width);
   margin: 0 auto;
 }
-
 .logo-wrapper {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-
 .nav-logo-img {
   height: 45px;
   width: auto;
   border-radius: 4px;
 }
-
 .logo-text {
   font-size: 1.4rem;
   font-weight: 700;
 }
-
 .logo-main { color: var(--color-primary); }
 .logo-sub { color: var(--color-secondary); }
 .logo-year { color: var(--color-accent); font-size: 0.9rem; margin-left: 2px; }
-
 .nav-menu ul {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .nav-menu a {
   color: var(--color-primary);
   font-size: 0.8rem;
@@ -213,23 +187,19 @@ h1, h2, .logo-text, .category-title {
   letter-spacing: 0.05em;
   padding: 8px 5px;
 }
-
 .nav-menu a:hover:not(.btn-nav) {
   color: var(--color-secondary);
 }
-
 .btn-nav {
   background-color: var(--color-secondary);
   color: var(--color-white) !important;
   padding: 8px 18px !important;
   border-radius: 4px;
 }
-
 .btn-nav:hover {
   background-color: var(--color-accent) !important;
   color: var(--color-primary) !important;
 }
-
 .nav-toggle { display: none; }
 
 /* ==========================================================================
@@ -250,7 +220,6 @@ h1, h2, .logo-text, .category-title {
   text-align: center;
   padding-top: 80px;
 }
-
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -260,7 +229,6 @@ h1, h2, .logo-text, .category-title {
   background: linear-gradient(135deg, rgba(0, 43, 102, 0.92) 0%, rgba(127, 29, 29, 0.88) 100%);
   z-index: 1;
 }
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -268,7 +236,6 @@ h1, h2, .logo-text, .category-title {
   max-width: 800px;
   padding: 0 20px;
 }
-
 .hero-tagline {
   color: var(--color-accent);
   font-family: var(--font-header);
@@ -277,7 +244,6 @@ h1, h2, .logo-text, .category-title {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .hero-title {
   font-size: 4rem;
   font-weight: 700;
@@ -285,7 +251,6 @@ h1, h2, .logo-text, .category-title {
   line-height: 1.1;
   margin-bottom: 10px;
 }
-
 .hero-subtitle {
   font-size: 1.6rem;
   font-weight: 300;
@@ -293,7 +258,6 @@ h1, h2, .logo-text, .category-title {
   margin-bottom: 25px;
   color: rgba(255, 255, 255, 0.8);
 }
-
 .hero-dates {
   font-family: var(--font-header);
   font-size: 1.15rem;
@@ -303,7 +267,6 @@ h1, h2, .logo-text, .category-title {
   letter-spacing: 0.05em;
   line-height: 1.4;
 }
-
 .hero-actions {
   display: flex;
   justify-content: center;
@@ -317,13 +280,11 @@ h1, h2, .logo-text, .category-title {
 .about-section {
   background-color: var(--color-white);
 }
-
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
-
 .about-col h3 {
   color: var(--color-primary);
   font-size: 1.3rem;
@@ -331,7 +292,6 @@ h1, h2, .logo-text, .category-title {
   border-left: 4px solid var(--color-accent);
   padding-left: 15px;
 }
-
 .about-col p {
   color: var(--color-text-dark);
   font-weight: 300;
@@ -339,13 +299,11 @@ h1, h2, .logo-text, .category-title {
 }
 
 /* ==========================================================================
-   6. SECCIÓN: SECRETARIADO (CON FOTO GRUPAL Y CARRUSEL DESLIZANTE)
+   6. SECCIÓN: SECRETARIADO
    ========================================================================== */
 .secretariat-section {
   background-color: var(--color-light);
 }
-
-/* Espacio para Foto Grupal */
 .secretariat-group-photo {
   max-width: 900px;
   margin: 0 auto 50px;
@@ -355,7 +313,6 @@ h1, h2, .logo-text, .category-title {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
-
 .group-photo-placeholder {
   height: 350px;
   display: flex;
@@ -364,13 +321,11 @@ h1, h2, .logo-text, .category-title {
   justify-content: center;
   color: #777777;
 }
-
 .group-photo-placeholder i {
   font-size: 4rem;
   color: var(--color-primary);
   margin-bottom: 15px;
 }
-
 .group-photo-placeholder p {
   font-family: var(--font-header);
   font-weight: 700;
@@ -378,18 +333,14 @@ h1, h2, .logo-text, .category-title {
   color: var(--color-primary);
   letter-spacing: 1px;
 }
-
 .group-photo-placeholder span {
   font-size: 0.85rem;
   margin-top: 5px;
 }
-
-/* Encabezado del carrusel */
 .carousel-section-header {
   text-align: center;
   margin-bottom: 30px;
 }
-
 .carousel-section-title {
   color: var(--color-secondary);
   font-size: 1.5rem;
@@ -398,7 +349,6 @@ h1, h2, .logo-text, .category-title {
   display: inline-block;
   padding-bottom: 10px;
 }
-
 .carousel-section-title::after {
   content: '';
   position: absolute;
@@ -408,8 +358,6 @@ h1, h2, .logo-text, .category-title {
   bottom: 0;
   left: 25%;
 }
-
-/* Estructura del Carrusel */
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -418,8 +366,6 @@ h1, h2, .logo-text, .category-title {
   margin: 0 auto;
   padding: 0 40px;
 }
-
-/* Contenedor infinito */
 .carousel-container {
   display: flex;
   gap: 20px;
@@ -427,20 +373,14 @@ h1, h2, .logo-text, .category-title {
   scroll-behavior: smooth;
   padding: 15px 5px;
   width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-/* Ocultar barra de scroll nativa */
 .carousel-container::-webkit-scrollbar {
   display: none;
 }
-.carousel-container {
-  -ms-overflow-style: none;  /* IE y Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-/* Tarjeta del Carrusel */
 .member-carousel-card {
-  flex: 0 0 250px; /* Ancho fijo para cada tarjeta de secretario */
+  flex: 0 0 250px;
   background-color: var(--color-white);
   border-radius: 8px;
   padding: 25px 20px;
@@ -449,14 +389,11 @@ h1, h2, .logo-text, .category-title {
   border-top: 4px solid var(--color-primary);
   transition: var(--transition);
 }
-
 .member-carousel-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.07);
   border-top-color: var(--color-accent);
 }
-
-/* Marco para fotos individuales */
 .member-photo-frame {
   width: 120px;
   height: 120px;
@@ -466,7 +403,6 @@ h1, h2, .logo-text, .category-title {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   overflow: hidden;
 }
-
 .member-photo-placeholder {
   width: 100%;
   height: 100%;
@@ -475,19 +411,16 @@ h1, h2, .logo-text, .category-title {
   align-items: center;
   justify-content: center;
 }
-
 .member-photo-placeholder i {
   font-size: 2.5rem;
   color: #c1c1c1;
 }
-
 .member-carousel-card h3 {
   font-size: 1rem;
   color: var(--color-primary);
   margin-bottom: 8px;
   line-height: 1.3;
 }
-
 .member-role {
   color: var(--color-secondary);
   font-weight: 700;
@@ -495,8 +428,6 @@ h1, h2, .logo-text, .category-title {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-
-/* Flechas de navegación */
 .carousel-arrow {
   position: absolute;
   background-color: var(--color-white);
@@ -513,22 +444,19 @@ h1, h2, .logo-text, .category-title {
   color: var(--color-primary);
   transition: var(--transition);
 }
-
 .carousel-arrow:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-
 .left-arrow { left: 0; }
 .right-arrow { right: 0; }
 
 /* ==========================================================================
-   7. SECCIÓN COMITÉS (ESTILOS CON EFECTO FLIP CARD 3D)
+   7. SECCIÓN COMITÉS (FLIP CARDS CON SCROLL MEJORADO)
    ========================================================================== */
 .committees-section {
   background-color: var(--color-white);
 }
-
 .category-title {
   color: var(--color-primary);
   font-size: 1.6rem;
@@ -539,13 +467,11 @@ h1, h2, .logo-text, .category-title {
   align-items: center;
   gap: 10px;
 }
-
 .category-primary-title {
   margin-top: 60px;
   color: var(--color-secondary);
   border-bottom-color: rgba(127, 29, 29, 0.2);
 }
-
 .flip-instruction-text {
   text-align: center;
   font-size: 0.85rem;
@@ -553,21 +479,16 @@ h1, h2, .logo-text, .category-title {
   margin-top: -15px;
   margin-bottom: 20px;
 }
-
 .committees-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
-
-/* Elemento contenedor del Flip Card */
 .flip-card {
   background-color: transparent;
-  perspective: 1000px; /* Efecto de profundidad 3D */
-  height: 250px; /* Altura estandarizada */
+  perspective: 1000px;
+  height: 280px; /* Incrementado para mejor lectura */
 }
-
-/* Contenedor interno que rota */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -575,46 +496,55 @@ h1, h2, .logo-text, .category-title {
   text-align: center;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
   border-radius: 8px;
 }
-
-/* Disparar rotación en Hover */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-/* Lado Delantero y Lado Trasero */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Oculta la parte trasera cuando no está rotada */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 8px;
-  padding: 25px 20px;
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
+}
+.flip-card-front {
+  background-color: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 4px solid var(--color-accent);
   justify-content: center;
   align-items: center;
 }
 
-/* Estilo Delantero */
-.flip-card-front {
-  background-color: var(--color-white);
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  border-top: 4px solid var(--color-accent);
-}
-
-/* Estilo Trasero */
+/* Lado trasero ajustado con SCROLL */
 .flip-card-back {
   background-color: var(--color-primary);
   color: var(--color-white);
-  transform: rotateY(180deg); /* Ya rota de forma nativa */
+  transform: rotateY(180deg);
   border-top: 4px solid var(--color-accent);
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
 }
 
-/* Badges/Etiquetas de Comités */
+/* Estilo elegante para la barra de scroll de la tarjeta */
+.flip-card-back::-webkit-scrollbar {
+  width: 5px;
+}
+.flip-card-back::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.flip-card-back::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 10px;
+}
+
 .committee-badge {
   font-size: 0.65rem;
   font-weight: 700;
@@ -624,7 +554,6 @@ h1, h2, .logo-text, .category-title {
   margin-bottom: 15px;
   letter-spacing: 0.05em;
 }
-
 .badge-un { background-color: rgba(0, 43, 102, 0.05); color: var(--color-primary); }
 .badge-regional { background-color: rgba(127, 29, 29, 0.05); color: var(--color-secondary); }
 .badge-double { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
@@ -637,7 +566,6 @@ h1, h2, .logo-text, .category-title {
   color: var(--color-primary);
   margin-bottom: 5px;
 }
-
 .committee-name {
   font-size: 0.85rem;
   font-weight: 600;
@@ -645,47 +573,175 @@ h1, h2, .logo-text, .category-title {
   line-height: 1.3;
   margin-bottom: 10px;
 }
-
 .committee-meta {
   font-size: 0.75rem;
   color: var(--color-text-muted);
   line-height: 1.4;
 }
 
-/* Lado trasero del Flip */
 .flip-card-back h3 {
   font-family: var(--font-header);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-accent);
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   letter-spacing: 1px;
 }
-
 .divider-gold {
   width: 40px;
   height: 2px;
   background-color: var(--color-accent);
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
 }
-
 .flip-card-back ul {
-  font-size: 0.8rem;
-  line-height: 1.5;
-  text-align: center;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  text-align: left;
+  padding: 0 5px;
 }
-
 .flip-card-back li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: 300;
-  opacity: 0.9;
+  opacity: 0.95;
+}
+.flip-card-back strong {
+  color: var(--color-accent-light);
+  font-weight: 700;
 }
 
 /* ==========================================================================
-   8. SECCIONES RESTANTES (RECURSOS, INSCRIPCIONES, CONTACTO, FOOTER)
+   8. SECCIÓN: CRONOGRAMA
    ========================================================================== */
-.resources-section { background-color: var(--color-light); }
+.schedule-section {
+  background-color: var(--color-light);
+}
+.schedule-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.tab-btn {
+  background-color: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px 25px;
+  font-family: var(--font-header);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tab-btn:hover, .tab-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0, 43, 102, 0.2);
+}
+.schedule-content {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.schedule-content.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Línea de tiempo */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 120px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-accent-light);
+}
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.timeline-time {
+  width: 100px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-align: right;
+  padding-right: 20px;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+.timeline-dot {
+  position: absolute;
+  left: 115px;
+  top: 12px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: 3px solid var(--color-white);
+  box-shadow: 0 0 0 2px var(--color-accent);
+  z-index: 2;
+}
+.timeline-dot.special {
+  background-color: var(--color-secondary);
+}
+.timeline-dot.break {
+  background-color: var(--color-accent);
+}
+.timeline-card {
+  margin-left: 35px;
+  background: var(--color-white);
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-primary);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+  flex-grow: 1;
+}
+.timeline-card h3 {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+.timeline-card p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+.break-card {
+  border-left-color: var(--color-accent);
+  background-color: #FFFDF5;
+  padding: 10px 20px;
+}
+.break-card h3 {
+  color: #856404;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   9. SECCIONES RESTANTES
+   ========================================================================== */
+.resources-section { background-color: var(--color-white); }
 .resources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; max-width: 800px; margin: 0 auto; }
-.resource-card { background-color: var(--color-white); padding: 30px; text-align: center; border-radius: 6px; border: 1px solid rgba(0,0,0,0.03); transition: var(--transition); }
+.resource-card { background-color: var(--color-light); padding: 30px; text-align: center; border-radius: 6px; border: 1px solid rgba(0,0,0,0.03); transition: var(--transition); }
 .resource-card:hover { border-color: var(--color-accent); }
 .resource-card i { font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 15px; }
 .resource-card h3 { color: var(--color-primary); font-size: 1.2rem; margin-bottom: 5px; }
@@ -704,7 +760,6 @@ h1, h2, .logo-text, .category-title {
 .info-list li { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; font-size: 0.9rem; }
 .info-list i { color: var(--color-secondary); }
 .contact-link-hover:hover { color: var(--color-accent); text-decoration: underline; }
-
 .contact-form { display: flex; flex-direction: column; gap: 15px; }
 .contact-form input, .contact-form textarea {
   width: 100%; padding: 12px; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px;
@@ -719,35 +774,28 @@ h1, h2, .logo-text, .category-title {
 .social-links a:hover { color: var(--color-accent); }
 
 /* ==========================================================================
-   9. RESPONSIVE DESIGN (ADAPTABILIDAD TOTAL A MÓVILES)
+   10. RESPONSIVE DESIGN
    ========================================================================== */
 @media (max-width: 1024px) {
   .section-title { font-size: 2.2rem; }
   .hero-title { font-size: 3.2rem; }
-  
-  /* Grids a 2 columnas */
   .committees-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { gap: 20px; }
 }
-
 @media (max-width: 768px) {
   .container { padding: 50px 0; }
   .section-title { font-size: 1.8rem; }
-  
-  /* Desactivar parallax en móviles para mejor rendimiento */
   .hero-section { background-attachment: scroll; }
   .hero-title { font-size: 2.3rem; }
   .hero-subtitle { font-size: 1.1rem; }
   .hero-actions { flex-direction: column; gap: 10px; width: 100%; max-width: 300px; margin: 0 auto; }
   
-  /* Menú Hamburguesa */
   .nav-toggle-label { display: flex; align-items: center; cursor: pointer; position: relative; width: 30px; height: 30px; }
   .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
     display: block; background-color: var(--color-primary); height: 2px; width: 100%; border-radius: 2px; position: absolute; transition: var(--transition);
   }
   .nav-toggle-label span::before { content: ''; top: -8px; }
   .nav-toggle-label span::after { content: ''; top: 8px; }
-
   .nav-menu {
     position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--color-white);
     max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out;
@@ -757,25 +805,28 @@ h1, h2, .logo-text, .category-title {
   .nav-menu li { width: 100%; text-align: center; }
   .nav-menu a { display: block; padding: 15px; font-size: 0.9rem; border-bottom: 1px solid rgba(0,0,0,0.03); }
   .btn-nav { margin: 10px; border-radius: 4px; }
-
   .nav-toggle:checked ~ .nav-toggle-label span { background-color: transparent; }
   .nav-toggle:checked ~ .nav-toggle-label span::before { transform: rotate(45deg); top: 0; }
   .nav-toggle:checked ~ .nav-toggle-label span::after { transform: rotate(-45deg); top: 0; }
   .nav-toggle:checked ~ .nav-menu { max-height: 500px; }
-
-  /* Colapsar todas las columnas */
+  
   .about-grid, .committees-grid, .resources-grid, .contact-grid {
     grid-template-columns: 1fr; gap: 20px;
   }
   
+  /* Ajuste de cronograma para móviles */
+  .timeline::before { left: 10px; }
+  .timeline-item { flex-direction: column; }
+  .timeline-time { text-align: left; width: 100%; padding-left: 25px; margin-bottom: 5px; }
+  .timeline-dot { left: 4px; top: 5px; }
+  .timeline-card { margin-left: 25px; width: calc(100% - 25px); }
+
   .group-photo-placeholder { height: 200px; }
   .carousel-wrapper { padding: 0 20px; }
   .carousel-arrow { width: 35px; height: 35px; }
-
   .register-buttons { flex-direction: column; width: 100%; max-width: 300px; margin: 0 auto; gap: 10px; }
   .footer-content { flex-direction: column; gap: 15px; text-align: center; }
 }
-
 @media (max-width: 480px) {
   .hero-title { font-size: 1.8rem; }
   .nav-logo-img { height: 35px; }

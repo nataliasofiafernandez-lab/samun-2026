@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
   <!-- NAVEGACIÓN PRINCIPAL -->
   <header class="header">
     <div class="nav-container container-nav">
@@ -32,13 +31,13 @@
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
       </label>
-
       <nav class="nav-menu">
         <ul>
           <li><a href="#hero">Inicio</a></li>
           <li><a href="#about">Sobre el evento</a></li>
           <li><a href="#secretariado">Secretariado</a></li>
           <li><a href="#comites">Comités</a></li>
+          <li><a href="#cronograma">Cronograma</a></li>
           <li><a href="#recursos">Recursos</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <li><a href="#inscripciones" class="btn-nav">Inscripciones</a></li>
@@ -54,7 +53,6 @@
       <p class="hero-tagline">COLEGIO SAN AGUSTÍN PRESENTA</p>
       <h1 class="hero-title">SAMUN 2026</h1>
       <h2 class="hero-subtitle">Líderes en el cambio global</h2>
-      <!-- MODIFICACIÓN: Fechas exactas de Septiembre -->
       <p class="hero-dates">
         <i class="fa-regular fa-calendar-days"></i> 17, 18 y 19 de Septiembre de 2026 • Cochabamba, Bolivia
       </p>
@@ -86,7 +84,7 @@
     </div>
   </section>
 
-  <!-- SECCIÓN: SECRETARIADO (MODIFICADA CON FOTO GRUPAL Y CARRUSEL DE 6 MIEMBROS) -->
+  <!-- SECCIÓN: SECRETARIADO -->
   <section id="secretariado" class="secretariat-section">
     <div class="container">
       <div class="section-header">
@@ -94,8 +92,6 @@
         <h2 class="section-title">Secretariado Organizador</h2>
         <div class="title-divider"></div>
       </div>
-
-      <!-- Espacio para fotografía grupal grande -->
       <div class="secretariat-group-photo">
         <div class="group-photo-placeholder">
           <i class="fa-solid fa-users"></i>
@@ -103,91 +99,62 @@
           <span>(Próximamente disponible)</span>
         </div>
       </div>
-
       <div class="carousel-section-header">
         <h3 class="carousel-section-title">Conoce a nuestros secretarios</h3>
       </div>
-
-      <!-- Carrusel Deslizable de Miembros -->
       <div class="carousel-wrapper">
         <button class="carousel-arrow left-arrow" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
         
         <div class="carousel-container" id="carouselTrack">
-          
-          <!-- Miembro 1 -->
           <div class="member-carousel-card">
             <div class="member-photo-frame">
-              <div class="member-photo-placeholder">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <div class="member-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
             </div>
             <h3>Leonardo de la Zerda Golac</h3>
             <p class="member-role">Secretario General</p>
           </div>
-
-          <!-- Miembro 2 -->
           <div class="member-carousel-card">
             <div class="member-photo-frame">
-              <div class="member-photo-placeholder">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <div class="member-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
             </div>
             <h3>Montserrat Nicol Careaga Torrico</h3>
             <p class="member-role">Sub Secretaria General</p>
           </div>
-
-          <!-- Miembro 3 -->
           <div class="member-carousel-card">
             <div class="member-photo-frame">
-              <div class="member-photo-placeholder">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <div class="member-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
             </div>
             <h3>Natalia Sofía Fernández Alcázar</h3>
             <p class="member-role">Secretaria Académica</p>
           </div>
-
-          <!-- Miembro 4 -->
           <div class="member-carousel-card">
             <div class="member-photo-frame">
-              <div class="member-photo-placeholder">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <div class="member-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
             </div>
             <h3>Valentina Alejandra Castro Soliz</h3>
             <p class="member-role">Secretaria de Logística</p>
           </div>
-
-          <!-- Miembro 5 -->
           <div class="member-carousel-card">
             <div class="member-photo-frame">
-              <div class="member-photo-placeholder">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <div class="member-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
             </div>
             <h3>Valentina Isabel Ortiz Moya</h3>
             <p class="member-role">Secretaria Económica</p>
           </div>
-
-          <!-- Miembro 6 -->
           <div class="member-carousel-card">
             <div class="member-photo-frame">
-              <div class="member-photo-placeholder">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <div class="member-photo-placeholder"><i class="fa-solid fa-user-tie"></i></div>
             </div>
             <h3>Antonieta Isabela Miranda Ordoñez</h3>
             <p class="member-role">Secretaria de Comunicación y Marketing</p>
           </div>
-
         </div>
-
         <button class="carousel-arrow right-arrow" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN: COMITÉS (MODIFICADA EN SECUNDARIA Y PRIMARIA CON EFECTO FLIP 3D) -->
+  <!-- SECCIÓN: COMITÉS -->
   <section id="comites" class="committees-section">
     <div class="container">
       <div class="section-header">
@@ -233,8 +200,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong>La Guerra de Bosnia y Herzegovina: protección de la población civil, mantenimiento de la paz y respuesta internacional ante la desintegración de Yugoslavia.</li>
-                <li><strong>Tópico B:<strong> La crisis de Kosovo: autodeterminación, soberanía estatal e intervención internacional frente al deterioro de la seguridad regional.</li>
+                <li><strong>Tópico A:</strong> La Guerra de Bosnia y Herzegovina: protección de la población civil, mantenimiento de la paz y respuesta internacional ante la desintegración de Yugoslavia.</li>
+                <li><strong>Tópico B:</strong> La crisis de Kosovo: autodeterminación, soberanía estatal e intervención internacional frente al deterioro de la seguridad regional.</li>
               </ul>
             </div>
           </div>
@@ -253,8 +220,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Planeamiento operacional de una misión multinacional de estabilización y protección de corredores humanitarios en Sudán tras la adopción de un alto al fuego.</li>
-                <li><strong>Tópico B:<strong> Desarrollo de doctrinas operacionales para la integración de sistemas de armas autónomas e inteligencia artificial en operaciones militares multinacionales.</li>
+                <li><strong>Tópico A:</strong> Planeamiento operacional de una misión multinacional de estabilización y protección de corredores humanitarios en Sudán tras la adopción de un alto al fuego.</li>
+                <li><strong>Tópico B:</strong> Desarrollo de doctrinas operacionales para la integración de sistemas de armas autónomas e inteligencia artificial en operaciones militares multinacionales.</li>
               </ul>
             </div>
           </div>
@@ -273,8 +240,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Controversia territorial y marítima (Nicaragua v. Colombia) y Delimitación marítima (Perú v. Chile): Criterios de jurisprudencia internacional y principios de equidad en la demarcación de fronteras estatales.</li>
-                <li><strong>Tópico B:<strong> Aplicación de la Convención para la Prevención y la Sanción del Delito de Genocidio en la Franja de Gaza (Sudáfrica v. Israel): Determinación de medidas provisionales y el alcance de la jurisdicción del Tribunal.</li>
+                <li><strong>Tópico A:</strong> Controversia territorial y marítima (Nicaragua v. Colombia) y Delimitación marítima (Perú v. Chile): Criterios de jurisprudencia internacional y principios de equidad en la demarcación de fronteras estatales.</li>
+                <li><strong>Tópico B:</strong> Aplicación de la Convención para la Prevención y la Sanción del Delito de Genocidio en la Franja de Gaza (Sudáfrica v. Israel): Determinación de medidas provisionales y el alcance de la jurisdicción del Tribunal.</li>
               </ul>
             </div>
           </div>
@@ -293,8 +260,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Medidas urgentes para la contención de la escalada bélica y la proliferación de armamento convencional y no convencional en el Gran Oriente Medio.</li>
-                <li><strong>Tópico B:<strong> Marco normativo y determinaciones del Derecho Internacional Humanitario (DIH) respecto al despliegue operativo de sistemas de armas autónomas letales (LAWS) y robots militares.</li>
+                <li><strong>Tópico A:</strong> Medidas urgentes para la contención de la escalada bélica y la proliferación de armamento convencional y no convencional en el Gran Oriente Medio.</li>
+                <li><strong>Tópico B:</strong> Marco normativo y determinaciones del Derecho Internacional Humanitario (DIH) respecto al despliegue operativo de sistemas de armas autónomas letales (LAWS) y robots militares.</li>
               </ul>
             </div>
           </div>
@@ -313,8 +280,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Arquitectura de consolidación de la paz en la transición posguerra: Fortalecimiento de la resiliencia institucional civil y estrategias para la transición hacia la autonomía económica.</li>
-                <li><strong>Tópico B:<strong> Mecanismos de estabilización nacional y control territorial frente a la insurgencia de agrupaciones armadas irregulares y el crimen organizado transnacional.</li>
+                <li><strong>Tópico A:</strong> Arquitectura de consolidación de la paz en la transición posguerra: Fortalecimiento de la resiliencia institucional civil y estrategias para la transición hacia la autonomía económica.</li>
+                <li><strong>Tópico B:</strong> Mecanismos de estabilización nacional y control territorial frente a la insurgencia de agrupaciones armadas irregulares y el crimen organizado transnacional.</li>
               </ul>
             </div>
           </div>
@@ -333,8 +300,8 @@
               <h3>Official Topics</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> International oversight and implementation strategies of the Durban Declaration and Programme of Action for the eradication of systemic racism and institutional xenophobia.</li>
-                <li><strong>Tópico B:<strong> Safeguarding fundamental freedoms in cyberspace: Multidimensional responses to the impact of generative Artificial Intelligence and countersurveillance.</li>
+                <li><strong>Tópico A:</strong> International oversight and implementation strategies of the Durban Declaration and Programme of Action for the eradication of systemic racism and institutional xenophobia.</li>
+                <li><strong>Tópico B:</strong> Safeguarding fundamental freedoms in cyberspace: Multidimensional responses to the impact of generative Artificial Intelligence and countersurveillance.</li>
               </ul>
             </div>
           </div>
@@ -353,8 +320,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Cooperación internacional para la garantía universal del acceso a la salud sexual y los derechos reproductivos frente a las barreras socioculturales e institucionales de género.</li>
-                <li><strong>Tópico B:<strong> Desafíos a la transversalización de la perspectiva de género: Impacto del auge de las corrientes ideológicas ultraconservadoras en el ejercicio de los derechos políticos de las mujeres.</li>
+                <li><strong>Tópico A:</strong> Cooperación internacional para la garantía universal del acceso a la salud sexual y los derechos reproductivos frente a las barreras socioculturales e institucionales de género.</li>
+                <li><strong>Tópico B:</strong> Desafíos a la transversalización de la perspectiva de género: Impacto del auge de las corrientes ideológicas ultraconservadoras en el ejercicio de los derechos políticos de las mujeres.</li>
               </ul>
             </div>
           </div>
@@ -373,8 +340,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Regulación de los mercados digitales transfronterizos: Establecimiento de estándares éticos frente a los precios personalizados algorítmicos mediante Inteligencia Artificial.</li>
-                <li><strong>Tópico B:<strong> Plan de reactivación y resiliencia macroeconómica en el Cáucaso Sur: Cooperación regional para el desarrollo en el contexto post-conflicto entre Armenia y Azerbaiyán.</li>
+                <li><strong>Tópico A:</strong> Regulación de los mercados digitales transfronterizos: Establecimiento de estándares éticos frente a los precios personalizados algorítmicos mediante Inteligencia Artificial.</li>
+                <li><strong>Tópico B:</strong> Plan de reactivación y resiliencia macroeconómica en el Cáucaso Sur: Cooperación regional para el desarrollo en el contexto post-conflicto entre Armenia y Azerbaiyán.</li>
               </ul>
             </div>
           </div>
@@ -393,8 +360,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> La militarización del espacio ultraterrestre: fortalecimiento del régimen internacional para prevenir el desarrollo de capacidades antisatélite, garantizar la seguridad de la infraestructura espacial y preservar el uso pacífico del espacio exterior.</li>
-                <li><strong>Tópico B:<strong> La explotación de los recursos espaciales: establecimiento de un marco jurídico internacional para la utilización sostenible de la Luna y otros cuerpos celestes, garantizando la cooperación internacional, la equidad en el acceso y la resolución pacífica de controversias.</li>
+                <li><strong>Tópico A:</strong> La militarización del espacio ultraterrestre: fortalecimiento del régimen internacional para prevenir el desarrollo de capacidades antisatélite, garantizar la seguridad de la infraestructura espacial y preservar el uso pacífico del espacio exterior.</li>
+                <li><strong>Tópico B:</strong> La explotación de los recursos espaciales: establecimiento de un marco jurídico internacional para la utilización sostenible de la Luna y otros cuerpos celestes, garantizando la cooperación internacional, la equidad en el acceso y la resolución pacífica de controversias.</li>
               </ul>
             </div>
           </div>
@@ -413,8 +380,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Cooperación interregional en materia de contraterrorismo: Mecanismos de inteligencia conjunta y seguridad fronteriza frente a la amenaza de ISIS y Al-Qaeda.</li>
-                <li><strong>Tópico B:<strong> Coordinación de la asistencia humanitaria para la reconstrucción post-conflicto en Siria y la gestión diplomática de los flujos de refugiados y desplazados internos.</li>
+                <li><strong>Tópico A:</strong> Cooperación interregional en materia de contraterrorismo: Mecanismos de inteligencia conjunta y seguridad fronteriza frente a la amenaza de ISIS y Al-Qaeda.</li>
+                <li><strong>Tópico B:</strong> Coordinación de la asistencia humanitaria para la reconstrucción post-conflicto en Siria y la gestión diplomática de los flujos de refugiados y desplazados internos.</li>
               </ul>
             </div>
           </div>
@@ -439,13 +406,11 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- ================= CATEGORÍA PRIMARIA ================= -->
       <h3 class="category-title category-primary-title"><i class="fa-solid fa-children"></i> 6to, 1ro y 2do de Secundaria</h3>
       <div class="committees-grid">
-
         <!-- Comité 13 -->
         <div class="flip-card">
           <div class="flip-card-inner">
@@ -459,8 +424,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Mitigación de las crisis de seguridad alimentaria estructural en zonas de conflicto: Optimización de la asistencia humanitaria de emergencia en Sudán, Gaza y Yemen.</li>
-                <li><strong>Tópico B:<strong> Salvaguarda de los derechos de la infancia en entornos de conflicto asimétrico: Estrategias de prevención de la radicalización y reintegración comunitaria en el Sahel, Haití y la República Democrática del Congo.</li>
+                <li><strong>Tópico A:</strong> Mitigación de las crisis de seguridad alimentaria estructural en zonas de conflicto: Optimización de la asistencia humanitaria de emergencia en Sudán, Gaza y Yemen.</li>
+                <li><strong>Tópico B:</strong> Salvaguarda de los derechos de la infancia en entornos de conflicto asimétrico: Estrategias de prevención de la radicalización y reintegración comunitaria en el Sahel, Haití y la República Democrática del Congo.</li>
               </ul>
             </div>
           </div>
@@ -479,8 +444,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Modernización de la arquitectura sanitaria global: Reforma del Reglamento Sanitario Internacional, el Mecanismo PABS y la soberanía compartida sobre recursos biológicos.</li>
-                <li><strong>Tópico B:<strong> Lineamientos éticos y gobernanza internacional de la Inteligencia Artificial en la salud pública: Mitigación del sesgo algorítmico y brechas de equidad en sistemas de salud en desarrollo.</li>
+                <li><strong>Tópico A:</strong> Modernización de la arquitectura sanitaria global: Reforma del Reglamento Sanitario Internacional, el Mecanismo PABS y la soberanía compartida sobre recursos biológicos.</li>
+                <li><strong>Tópico B:</strong> Lineamientos éticos y gobernanza internacional de la Inteligencia Artificial en la salud pública: Mitigación del sesgo algorítmico y brechas de equidad en sistemas de salud en desarrollo.</li>
               </ul>
             </div>
           </div>
@@ -499,8 +464,8 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> Aplicación vinculante del Convenio de Basilea sobre el control de los movimientos transfronterizos de los desechos peligrosos: Responsabilidad extendida del productor y flujos de basura electrónica.</li>
-                <li><strong>Tópico B:<strong> Directrices socioambientales para la minería de minerales críticos en la transición energética: Gestión del estrés hídrico y salvaguarda de los derechos comunales en el Triángulo del Litio.</li>
+                <li><strong>Tópico A:</strong> Aplicación vinculante del Convenio de Basilea sobre el control de los movimientos transfronterizos de los desechos peligrosos: Responsabilidad extendida del productor y flujos de basura electrónica.</li>
+                <li><strong>Tópico B:</strong> Directrices socioambientales para la minería de minerales críticos en la transición energética: Gestión del estrés hídrico y salvaguarda de los derechos comunales en el Triángulo del Litio.</li>
               </ul>
             </div>
           </div>
@@ -519,14 +484,210 @@
               <h3>Tópicos Oficiales</h3>
               <div class="divider-gold"></div>
               <ul>
-                <li><strong>Tópico A:<strong> La crisis multidimensional de seguridad en el Mar Rojo: Evaluación de la validez del Artículo 51 de la Carta de las Naciones Unidas ante las tácticas asimétricas de actores no estatales.</li>
-                <li><strong>Tópico B:<strong> Evaluación y reestructuración de los mecanismos de toma de decisiones en el Consejo de Seguridad: Viabilidad técnica, representatividad global y reformas estructurales al derecho de veto de los miembros permanentes.</li>
+                <li><strong>Tópico A:</strong> La crisis multidimensional de seguridad en el Mar Rojo: Evaluación de la validez del Artículo 51 de la Carta de las Naciones Unidas ante las tácticas asimétricas de actores no estatales.</li>
+                <li><strong>Tópico B:</strong> Evaluación y reestructuración de los mecanismos de toma de decisiones en el Consejo de Seguridad: Viabilidad técnica, representatividad global y reformas estructurales al derecho de veto de los miembros permanentes.</li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN: CRONOGRAMA ================= -->
+  <section id="cronograma" class="schedule-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">PROGRAMA ACADÉMICO</span>
+        <h2 class="section-title">Cronograma de Actividades</h2>
+        <div class="title-divider"></div>
+      </div>
+
+      <!-- Selector de Días (Tabs) -->
+      <div class="schedule-tabs">
+        <button class="tab-btn active" onclick="openDay(event, 'day1')">
+          <i class="fa-regular fa-calendar"></i> Jueves 17/09
+        </button>
+        <button class="tab-btn" onclick="openDay(event, 'day2')">
+          <i class="fa-regular fa-calendar"></i> Viernes 18/09
+        </button>
+        <button class="tab-btn" onclick="openDay(event, 'day3')">
+          <i class="fa-regular fa-calendar"></i> Sábado 19/09
+        </button>
+      </div>
+
+      <!-- DÍA 1: JUEVES 17/09 -->
+      <div id="day1" class="schedule-content active">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">8:00 – 8:50</div>
+            <div class="timeline-dot special"></div>
+            <div class="timeline-card">
+              <h3>Inauguración</h3>
+              <p>Ceremonia oficial de apertura del modelo con autoridades e invitados especiales.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">8:50 – 9:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Presentación en Foros</h3>
+              <p>Ubicación de delegados en sus respectivos comités y presentación de Mesas Directivas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">9:00 – 9:55</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Primera Sesión</h3>
+              <p>Apertura formal de la lista de oradores y establecimiento de la agenda.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">9:55 – 10:25</div>
+            <div class="timeline-dot break"></div>
+            <div class="timeline-card break-card">
+              <h3><i class="fa-solid fa-mug-hot"></i> Refrigerio</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:25 – 12:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Segunda Sesión</h3>
+              <p>Debate moderado y primeros cauces informales.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12:00 – 13:00</div>
+            <div class="timeline-dot break"></div>
+            <div class="timeline-card break-card">
+              <h3><i class="fa-solid fa-utensils"></i> Almuerzo</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">13:00 – 15:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Tercera Sesión</h3>
+              <p>Formación de bloques de negociación y trabajo en anteproyectos.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:00 – 15:30</div>
+            <div class="timeline-dot break"></div>
+            <div class="timeline-card break-card">
+              <h3><i class="fa-solid fa-cookie-bite"></i> Refrigerio</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:30 – 17:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Cuarta Sesión</h3>
+              <p>Cierre del primer día de trabajo académico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DÍA 2: VIERNES 18/09 -->
+      <div id="day2" class="schedule-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">8:00 – 9:55</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Quinta Sesión</h3>
+              <p>Redacción y presentación oficial de proyectos de resolución.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">9:55 – 10:25</div>
+            <div class="timeline-dot break"></div>
+            <div class="timeline-card break-card">
+              <h3><i class="fa-solid fa-mug-hot"></i> Refrigerio</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:25 – 12:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Sexta Sesión</h3>
+              <p>Debate de enmiendas y correcciones a los documentos presentados.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12:00 – 14:00</div>
+            <div class="timeline-dot special"></div>
+            <div class="timeline-card">
+              <h3><i class="fa-solid fa-masks-theater"></i> Almuerzo / Acto Cultural</h3>
+              <p>Espacio de integración social, actividades culturales y confraternización.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">14:00 – 15:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Séptima Sesión</h3>
+              <p>Introducción de crisis o debates de alta velocidad según el comité.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:00 – 15:30</div>
+            <div class="timeline-dot break"></div>
+            <div class="timeline-card break-card">
+              <h3><i class="fa-solid fa-cookie-bite"></i> Refrigerio</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:30 – 17:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Octava Sesión</h3>
+              <p>Consolidación de acuerdos finales previa a la votación.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DÍA 3: SÁBADO 19/09 -->
+      <div id="day3" class="schedule-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">8:30 – 10:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Novena Sesión</h3>
+              <p>Fase final de debates sustantivos.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:00 – 10:30</div>
+            <div class="timeline-dot break"></div>
+            <div class="timeline-card break-card">
+              <h3><i class="fa-solid fa-mug-hot"></i> Refrigerio</h3>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:30 – 12:00</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <h3>Décima Sesión</h3>
+              <p>Votación formal de resoluciones y cierre académico en cada foro.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">12:00 – 13:00</div>
+            <div class="timeline-dot special"></div>
+            <div class="timeline-card">
+              <h3>Clausura</h3>
+              <p>Ceremonia de premiación, entrega de reconocimientos y cierre oficial de SAMUN 2026.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -581,14 +742,12 @@
         <div class="contact-info">
           <h3>Formas de contactarnos</h3>
           <ul class="info-list">
-            <!-- MODIFICACIÓN: Link de Google Maps para Colegio -->
             <li>
               <i class="fa-solid fa-location-dot"></i> 
               <a href="https://maps.app.goo.gl/SbfQoLrQAz8rkp4f8" target="_blank" class="contact-link-hover">
                 Colegio San Agustín, Cochabamba (Ver mapa)
               </a>
             </li>
-            <!-- MODIFICACIÓN: Nuevo correo oficial -->
             <li>
               <i class="fa-solid fa-envelope"></i> 
               <a href="mailto:samuncbba@gmail.com" class="contact-link-hover">samuncbba@gmail.com</a>
@@ -610,7 +769,6 @@
     <div class="container footer-content">
       <p>&copy; 2026 SAMUN - Colegio San Agustín.</p>
       <div class="social-links">
-        <!-- MODIFICACIÓN: Instagram Oficial, removido Facebook -->
         <a href="https://www.instagram.com/samun_cbba?igsh=dGdvOXN6cWdjYmM0" target="_blank">
           <i class="fa-brands fa-instagram"></i>
         </a>
@@ -618,14 +776,14 @@
     </div>
   </footer>
 
-  <!-- JAVASCRIPT: Controlador para mover el carrusel de secretarios de forma táctil y por botones -->
+  <!-- JAVASCRIPT: Carrusel y Pestañas del Cronograma -->
   <script>
+    // Carrusel de Secretarios
     const track = document.getElementById('carouselTrack');
     const nextBtn = document.getElementById('nextBtn');
     const prevBtn = document.getElementById('prevBtn');
-
     let scrollAmount = 0;
-    const cardWidth = 270; // Ancho aproximado de la tarjeta + gap
+    const cardWidth = 270;
 
     nextBtn.addEventListener('click', () => {
       const maxScroll = track.scrollWidth - track.clientWidth;
@@ -641,6 +799,22 @@
         track.scrollTo({ left: scrollAmount, behavior: 'smooth' });
       }
     });
+
+    // Control de Pestañas del Cronograma
+    function openDay(evt, dayId) {
+      const contents = document.getElementsByClassName("schedule-content");
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.remove("active");
+      }
+      
+      const tabBtns = document.getElementsByClassName("tab-btn");
+      for (let i = 0; i < tabBtns.length; i++) {
+        tabBtns[i].classList.remove("active");
+      }
+      
+      document.getElementById(dayId).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
   </script>
 </body>
 </html>

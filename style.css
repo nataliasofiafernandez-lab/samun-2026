@@ -199,11 +199,7 @@ h1, h2, .logo-text, .category-title {
 .hero-section {
   position: relative;
   min-height: 100vh;
-  background-color: #020B18; /* Azul noche ultra oscuro para relleno de bordes */
-  background-image: url('logo SAMUN.jpeg'); 
-  background-size: contain;  /* Mantiene la imagen completa sin recortar ningún borde */
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #020B18 0%, #001A3D 50%, #020B18 100%);
   display: flex;
   align-items: center;
   justify-content: center;

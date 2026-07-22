@@ -46,7 +46,6 @@ a {
 ul {
   list-style: none;
 }
-
 /* ==========================================================================
    2. ESTILOS REUSABLES (SECCIONES Y BOTONES GENERALE)
    ========================================================================== */
@@ -124,7 +123,6 @@ h1, h2, .logo-text, .category-title {
   padding: 14px 28px;
   font-size: 0.9rem;
 }
-
 /* ==========================================================================
    3. NAVEGACIÓN (HEADER)
    ========================================================================== */
@@ -192,7 +190,6 @@ h1, h2, .logo-text, .category-title {
   color: var(--color-primary) !important;
 }
 .nav-toggle { display: none; }
-
 /* ==========================================================================
    4. SECCIÓN HERO (HERO CON LOGO COMPLETO Y MARCO ELEGANTE)
    ========================================================================== */
@@ -265,7 +262,6 @@ h1, h2, .logo-text, .category-title {
   gap: 20px;
   flex-wrap: wrap;
 }
-
 /* ==========================================================================
    5. SECCIÓN: SOBRE EL EVENTO
    ========================================================================== */
@@ -289,7 +285,6 @@ h1, h2, .logo-text, .category-title {
   font-weight: 300;
   text-align: justify;
 }
-
 /* ==========================================================================
    6. SECCIÓN: SECRETARIADO
    ========================================================================== */
@@ -299,35 +294,20 @@ h1, h2, .logo-text, .category-title {
 .secretariat-group-photo {
   max-width: 900px;
   margin: 0 auto 50px;
-  background-color: #eaeaea;
-  border: 2px dashed var(--color-accent);
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
-.group-photo-placeholder {
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #777777;
+.group-photo-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  transition: var(--transition);
 }
-.group-photo-placeholder i {
-  font-size: 4rem;
-  color: var(--color-primary);
-  margin-bottom: 15px;
-}
-.group-photo-placeholder p {
-  font-family: var(--font-header);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--color-primary);
-  letter-spacing: 1px;
-}
-.group-photo-placeholder span {
-  font-size: 0.85rem;
-  margin-top: 5px;
+.group-photo-img:hover {
+  transform: scale(1.02);
 }
 .carousel-section-header {
   text-align: center;
@@ -387,25 +367,23 @@ h1, h2, .logo-text, .category-title {
   border-top-color: var(--color-accent);
 }
 .member-photo-frame {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   margin: 0 auto 20px;
   border-radius: 50%;
   border: 3px solid var(--color-background);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   overflow: hidden;
+  background-color: #f8f9fa;
 }
-.member-photo-placeholder {
+.member-img {
   width: 100%;
   height: 100%;
-  background-color: #f1f3f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  transition: var(--transition);
 }
-.member-photo-placeholder i {
-  font-size: 2.5rem;
-  color: #c1c1c1;
+.member-carousel-card:hover .member-img {
+  transform: scale(1.08);
 }
 .member-carousel-card h3 {
   font-size: 1rem;
@@ -442,7 +420,6 @@ h1, h2, .logo-text, .category-title {
 }
 .left-arrow { left: 0; }
 .right-arrow { right: 0; }
-
 /* ==========================================================================
    7. SECCIÓN COMITÉS
    ========================================================================== */
@@ -524,7 +501,6 @@ h1, h2, .logo-text, .category-title {
 .flip-card-back::-webkit-scrollbar { width: 5px; }
 .flip-card-back::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
 .flip-card-back::-webkit-scrollbar-thumb { background: var(--color-accent); border-radius: 10px; }
-
 .committee-badge {
   font-size: 0.65rem;
   font-weight: 700;
@@ -540,7 +516,6 @@ h1, h2, .logo-text, .category-title {
 .badge-english { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
 .badge-primaria { background-color: #e2e3e5; color: #383d41; }
 .badge-double-primaria { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-
 .committee-abbreviation {
   font-size: 1.3rem;
   color: var(--color-primary);
@@ -558,7 +533,6 @@ h1, h2, .logo-text, .category-title {
   color: var(--color-text-muted);
   line-height: 1.4;
 }
-
 .flip-card-back h3 {
   font-family: var(--font-header);
   font-size: 0.9rem;
@@ -588,7 +562,6 @@ h1, h2, .logo-text, .category-title {
   color: var(--color-accent-light);
   font-weight: 700;
 }
-
 /* ==========================================================================
    8. SECCIÓN: CRONOGRAMA
    ========================================================================== */
@@ -636,7 +609,6 @@ h1, h2, .logo-text, .category-title {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 .timeline {
   position: relative;
   padding-left: 30px;
@@ -703,7 +675,6 @@ h1, h2, .logo-text, .category-title {
   align-items: center;
   gap: 8px;
 }
-
 /* ==========================================================================
    9. SECCIÓN: INSCRIPCIONES (NUEVA TONALIDAD ULTRA OSCURA Y BOTONES)
    ========================================================================== */
@@ -716,7 +687,6 @@ h1, h2, .logo-text, .category-title {
 .resource-card p { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 20px; }
 .btn-text { color: var(--color-secondary); font-weight: 600; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; gap: 5px; }
 .btn-text:hover { color: var(--color-accent); }
-
 /* INSCRIPCIONES CON TONALIDAD NOCTURNA */
 .register-section { 
   background-color: #00122E; /* Azul marino extremadamente oscuro y sobrio */
@@ -747,7 +717,6 @@ h1, h2, .logo-text, .category-title {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 /* Estilos específicos de botones para fondo oscuro */
 .btn-register-primary {
   background-color: var(--color-secondary);
@@ -789,7 +758,6 @@ h1, h2, .logo-text, .category-title {
   opacity: 0.9;
   margin-top: 3px;
 }
-
 /* CONTACTO Y FOOTER */
 .contact-section { background-color: var(--color-white); }
 .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
@@ -803,13 +771,11 @@ h1, h2, .logo-text, .category-title {
   background-color: var(--color-light); font-family: var(--font-body); font-size: 0.9rem;
 }
 .contact-form button { align-self: flex-start; }
-
 .footer { background-color: #020B18; color: rgba(255, 255, 255, 0.6); padding: 30px 0; font-size: 0.8rem; border-top: 2px solid var(--color-accent); }
 .footer-content { display: flex; justify-content: space-between; align-items: center; }
 .social-links { display: flex; gap: 10px; }
 .social-links a { font-size: 1.3rem; }
 .social-links a:hover { color: var(--color-accent); }
-
 /* ==========================================================================
    10. RESPONSIVE DESIGN
    ========================================================================== */
@@ -818,6 +784,7 @@ h1, h2, .logo-text, .category-title {
   .hero-title { font-size: 3.2rem; }
   .committees-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { gap: 20px; }
+  .group-photo-img { height: 350px; }
 }
 @media (max-width: 768px) {
   .container { padding: 50px 0; }
@@ -855,8 +822,7 @@ h1, h2, .logo-text, .category-title {
   .timeline-time { text-align: left; width: 100%; padding-left: 25px; margin-bottom: 5px; }
   .timeline-dot { left: 4px; top: 5px; }
   .timeline-card { margin-left: 25px; width: calc(100% - 25px); }
-
-  .group-photo-placeholder { height: 200px; }
+  .group-photo-img { height: 250px; }
   .carousel-wrapper { padding: 0 20px; }
   .carousel-arrow { width: 35px; height: 35px; }
   .register-buttons { flex-direction: column; width: 100%; max-width: 320px; margin: 0 auto; gap: 12px; }
